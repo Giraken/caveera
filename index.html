@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+        name="description"
+        content="Creating Captivating Narrative with Technology. Here's Gambit Rojo, we are a bunch of innovators and digital marketers enthusiast who gladly handle your brand."
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet"/>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./dist/output.css"/>
+        <title>Caveera</title>
+    </head>
+
+    <body>
+        <div class="relative w-full">
+            <div class="absolute w-[300px] h-[300px] xl:w-[600px] 2xl:w-[500px] 2xl:h-[400px] xl:h-[400px] bg-[#5B5D36] z-[-1] top-[10%] left-[0%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[500px] opacity-[0.6]"></div>
+            <div class="absolute w-[200px] h-[200px] xl:w-[400px] 2xl:w-[600px] 2xl:h-[600px] xl:h-[400px] bg-[#717D59] z-[-1] top-[30%] left-[75%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[0.65] 2xl:blur-[192px]"></div>
+            <!-- Navbar goes here -->
+            <div class="backbone h-[80px] xl:h-[76px] absolute w-full bg-transparent" id="backbone"></div>
+            <nav class="relative top-0 left-0 z-20 w-full transition duration-500 ease-in-out" id="navbar">
+                <div class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 2xl:px-0">
+                    <!-- <a href="/" class="flex items-center text-3xl font-bold font-outfit">
+                        <h1 class="text-[#00B0FF]">
+                            Gambit<span class="text-white">Rojo</span>
+                        </h1>
+                    </a> -->
+                    <a href="/">
+                        <img
+                            src="./src/assets/images/logo_green.png"
+                            alt="logo-transparent"
+                            class="relative md:w-60 w-40"
+                        />
+                    </a>
+                    <button
+                        data-collapse-toggle="navbar-default"
+                        type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 md:hidden"
+                        aria-controls="navbar-default"
+                        aria-expanded="false"
+                    >
+                        <span class="sr-only">Open main menu</span>
+                        <svg
+                            class="w-6 h-6"
+                            aria-hidden="true"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                        <ul  class="flex flex-col mt-4 text-xl font-medium tracking-widest uppercase bg-transparent md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="block py-2 pl-3 pr-4 font-nunito text-white bg-[#959676] md:bg-transparent md:p-0 active"
+                                    aria-current="page"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#about"
+                                    class="block py-2 pl-3 pr-4 font-semibold font-nunito text-black rounded md:border-0 md:p-0"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#product"
+                                    class="block py-2 pl-3 pr-4 font-semibold font-nunito text-black rounded md:border-0 md:p-0"
+                                    >Product</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="block py-2 pl-3 pr-4 font-semibold font-nunito text-black rounded md:border-0 md:p-0"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                
+            <!-- Hero goes here -->
+            <!-- <section class="w-full min-h-[50vh] md:min-h-[90vh]">
+                <div class="w-full h-[50vh] md:h-[90vh] text-center relative flex flex-col justify-center overflow-x-hidden">
+                    <div class="w-full mx-auto lg:max-w-xl 2xl:max-w-xl relative flex flex-col text-left px-5 2xl:px-0">
+                        <h1 class="hero-item font-nunito font-extrabold text-[#959676] text-[22px] sm:text-[68px] xl:text-[64px] 2xl:text-[48px] leading-[1.2] drop-shadow-lg mb-[-10px] xl:mb-[-50px] mt-[-82px] xl:mt-[-72px]">
+                            Create Your Own <br/>Skincare Brand With Us
+                        </h1>
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="w-full min-h-[50vh] md:min-h-[90vh] mb-40 mt-0 xl:mt-0" id="home">
+                <div class="w-full min-h-[100vh] text-center relative flex flex-col justify-center overflow-x-hidden gap-20">
+                    <div class="w-full mx-auto lg:max-w-[1150px] relative grid grid-cols-1 xl:grid-cols-3 text-center items-center px-5 2xl:px-0 hero-item">
+                        <div class="col-span-2 max-w-full xl:max-w-[800px]">
+                            <p class="font-nunito text-center xl:text-left text-[#ADB093] xl:text-[32px] text-[28px] font-extrabold">
+                                Clear skin, Clear mind
+                            </p>
+                            <h1 class="hero-item text-center font-nunito font-extrabold text-[#959676] text-[26px] sm:text-[48px] xl:text-left xl:text-[44px] 2xl:text-[48px] leading-[1.2] drop-shadow-lg mt-4">
+                                Formulasi lotion dengan ekstrak bahan alam dan teknologi nanopartikel CAVEERA
+                            </h1>
+                            <p class="font-nunito text-center xl:text-left text-[#ADB093] xl:text-[28px] text-[22px] font-semibold mt-6">
+                                Redakan jerawat di wajah dan tubuh anda. Bagaimana bisa?
+                            </p>
+                            <a href="#about" class="">
+                                <button class="mt-[50px] font-nunito rounded-[75px] border-double border-4 border-[#959676] text-sm text-white font-normal bg-[#464821] px-8 py-3 sm:text-xl sm:pl-16 sm:pr-16 sm:pt-3 sm:pb-3">
+                                    Learn More <i></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="flex items-center justify-center w-full bg-transparent xl:justify-end">
+                            <img
+                                src="./src/assets/images/product.png"
+                                alt="logo-transparent"
+                                class="relative w-72 xl:w-[25vw] mt-[50px] xl:mt-0"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-full min-h-[50vh] md:min-h-[90vh] mb-40 mt-0 xl:mt-0" id="about">
+                <div class="w-full min-h-[100vh] text-center relative flex flex-col justify-center overflow-x-hidden gap-20">
+                    <div class="w-full mx-auto lg:max-w-[1150px] relative grid grid-cols-1 xl:grid-cols-3 text-center items-center px-5 2xl:px-0 hero-item">
+                        <div class="col-span-2 max-w-full xl:max-w-[800px]">
+                            <h1 class="hero-item text-left font-nunito font-extrabold text-[#959676] text-[32px] sm:text-[48px] xl:text-[44px] 2xl:text-[48px] leading-[1.2] drop-shadow-lg">
+                                About Us
+                            </h1>
+                            <p class="font-nunito font-semibold text-[#5B5D36] text-[20px] xl:text-[22px] 2xl:text-[24px] text-left opacity-[0.5]">
+                                Kami adalah tim Program Kreativitas Mahasiswa (PKM) dalam bidang kewirausahaan. 
+                                Caveera adalah produk yang kami tawarkan untuk anda yang ingin mengatasi permasalahan 
+                                jerawat pada kulit. Lotion Caveera mengandung ekstrak bahan alami, yakni Portulaca 
+                                oleracea dan Aloe vera Linn yang berperan aktif untuk meredakan jerawat serta melembabkan 
+                                kulit. Formulasi lotion Caveera juga telah disesuaikan teksturnya agar mampu terserap 
+                                dengan baik oleh kulit, sehingga zat aktif Caveera bisa berperan dengan sempurna di kulit 
+                                wajah hingga badan. 
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center w-full bg-transparent xl:justify-end">
+                            <img
+                                src="./src/assets/images/botol.png"
+                                alt="logo-transparent"
+                                class="relative w-56 xl:w-[12vw] mt-50px xl:mt-0"
+                            />
+                        </div>
+                    </div>
+                    <div class="w-full mx-auto flex justify-center lg:max-w-[1150px] 2xl:max-w-[1366px] px-5 xl:px-0 hero-item">
+                        <div class="w-full xl:w-[75%]">
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- Footer goes here -->
+        <footer class="w-full">
+            <!-- <div
+                class="container grid w-full grid-cols-1 mx-auto sm:grid-cols-2"
+            >
+                <div
+                class="flex flex-col items-center justify-start gap-5 py-20 text-center"
+                >
+                <h3
+                    class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+                >
+                    Contact Us
+                </h3>
+                <h4
+                    class="text-lg font-medium text-white font-inter xl:text-xl"
+                >
+                    team@gambitrojo.com
+                </h4>
+                <h4
+                    class="text-lg font-medium text-white font-inter xl:text-xl"
+                >
+                    <span><i class="fa-brands fa-whatsapp"></i></span> +62 812
+                    3456789
+                </h4>
+                </div>
+                <div
+                class="flex flex-col items-center justify-start gap-5 py-20 text-center"
+                >
+                <h3
+                    class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+                >
+                    Our Social Media
+                </h3>
+                <div class="flex items-center gap-10">
+                    <a
+                    href="https://www.instagram.com/gambitrojo/?igshid=MzRlODBiNWFlZA%3D%3D"
+                    class=""
+                    >
+                    <img
+                        src="./src/assets/icons/instagram.svg"
+                        alt="instagram"
+                        class="w-[28px] xl:w-[40px]"
+                    />
+                    </a>
+                    <a
+                    href="https://www.linkedin.com/company/gambit-rojo-digital/about/"
+                    class=""
+                    >
+                    <img
+                        src="./src/assets/icons/linkedin.svg"
+                        alt="linkedin"
+                        class="w-[28px] xl:w-[40px]"
+                    />
+                    </a>
+                    <a href="#" class="">
+                    <img
+                        src="./src/assets/icons/tiktok.svg"
+                        alt="tiktok"
+                        class="w-[28px] xl:w-[40px]"
+                    />
+                    </a>
+                </div>
+                </div>
+            </div> -->
+            <div class="w-full bg-[#1D1D1D] text-center p-4">
+                <h4 class="text-[#A7A7A7] font-inter font-normal text-base">
+                @ 2023 Caveera. All rights reserved
+                </h4>
+            </div>
+        </footer>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script> -->
+        <script src="./src/js/scrollreveal.js"></script>
+        <script src="./src/js/navbar.js"></script>
+        <script src="./src/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+        <script>
+        var rellax = new Rellax('.rellax', {
+            center: true,
+        });
+        </script>
+    </body>
+</html>

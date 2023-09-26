@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@keyframes bg-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    /* scroll-behavior: slow; */
+}
+
+@media screen and (max-width: 576px) {
+    /* nav {
+        background-color: #070c0f84 !important;
+        backdrop-filter: blur(75px) !important;
+    } */
+}
+
+.blurred {
+    background-color: rgb(255, 255, 255) !important;
+    backdrop-filter: blur(500px) !important;
+    box-shadow: 50px 0 50px hsla(152, 30%, 15%, .3);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.active {
+    color: white !important;
+    font-weight: 800;
+    background-color: #959676;
+    border-radius: 0px !important;
+}
+
+/* .active::after{
+    content: '';
+    position: absolute;
+    top: 70%;
+    border-radius: 15px;
+    right: 43%;
+    width: 2%;
+    height: 10px;
+    background: #959676;
+} */
+
+@media only screen and (min-width: 576px) {
+    .active {
+        color: #959676 !important;
+        font-weight: 800;
+        background-color: transparent;
+    }
+}
+
+
+.text-bg {
+    animation: bg-animation 15s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+}
+
+.about-unique::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #A7A7A7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    /* background-color: #258287; */
+}
+
+.about-unique:hover:after {
+    height: 20px;
+    background-color: #0088c6;
+}
+
+.section-strategic p {
+    color: #1C1D20;
+        font-weight: 900;
+        font-size: 96px;
+        text-shadow:
+            0px 0px 0 #767676,
+            -1px -1px 0 #767676,
+            1px -1px 0 #767676,
+            -1px 1px 0 #767676,
+            1px 1px 0 #767676;
+}
+
+@media screen and (min-width: 1280px) {
+    .section-strategic p {
+            font-size: 128px;
+        }
+}
