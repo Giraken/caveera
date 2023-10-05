@@ -111,3 +111,58 @@ button:focus {
             font-size: 128px;
         }
 }
+
+.shadow-box{
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10); 
+    backdrop-filter: blur(5px); 
+    background: rgba(255, 255, 255, 0.57); 
+}
+
+.profile-box{
+    background: #717D59;
+    border-radius: 27px;
+    position: relative;
+}
+
+.team-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(5px); 
+    border-radius: 0 0 27px 27px;
+}
+
+.buy-btn{
+    border-radius: 68px;
+    background: linear-gradient(180deg, #464821 0%, #959676 100%);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.11);
+}
+
+.buy-btn:hover{
+    background: linear-gradient(180deg, #959676 0%, #464821 100%);
+}
+
+.footer-bg{
+    fill: linear-gradient(101deg, #C5CDB5 6.98%, #464821 106.58%);
+}
+
+.btn{
+    background: linear-gradient(199deg, #707152 12.7%, rgba(112, 113, 82, 0.00) 108.68%);
+    border-radius: 50px 50px 0px 50px; 
+}
+
+.btn:hover{
+    background: linear-gradient(127deg, #707152 28.5%, rgba(112, 113, 82, 0.00) 107.56%); 
+}
+
+.btn-reverse{
+    background: linear-gradient(127deg, #707152 28.5%, rgba(112, 113, 82, 0.00) 107.56%); 
+    border-radius: 50px 50px 50px 0px; 
+}
+
+.btn-reverse:hover{
+    background: linear-gradient(199deg, #707152 12.7%, rgba(112, 113, 82, 0.00) 108.68%);
+}
